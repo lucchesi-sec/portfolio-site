@@ -39,23 +39,22 @@ const NavSection = ({ width, section, setGoURL }: NavSectionProps) => {
                   alt={site.title}
                   title={site.title}
                   className="w-full h-full object-contain p-2 cursor-pointer"
-                  onClick={
-                    site.inner ? () => setGoURL(site.link) : () => window.open(site.link)
-                  }
+                  onClick={() => setGoURL(site.link, site.inner)}
                 />
               ) : (
                 <div
                   className="size-full flex-center cursor-default text-black"
-                  onClick={
-                    site.inner ? () => setGoURL(site.link) : () => window.open(site.link)
-                  }
+                  onClick={() => setGoURL(site.link, site.inner)}
                 >
                   <span text-lg>{site.title}</span>
                 </div>
               )}
             </div>
-            <span m="t-2 x-auto" text-sm>
+            <span m="t-2 x-auto" text-sm className="flex items-center gap-1">
               {site.title}
+              {!site.inner && (
+                <span className="i-lucide:external-link text-xs opacity-50" />
+              )}
             </span>
           </div>
         ))}
@@ -139,7 +138,7 @@ const Safari = ({ width }: SafariProps) => {
     currentURL: ""
   });
 
-  const setGoURL = (url: string) => {
+  const setGoURL = (url: string, isInner?: boolean) => {
     const isValid = checkURL(url);
 
     if (isValid) {
@@ -147,6 +146,12 @@ const Safari = ({ width }: SafariProps) => {
         url = `https://${url}`;
     } else if (url !== "") {
       url = `https://www.bing.com/search?q=${url}`;
+    }
+
+    // For external links, open in new tab
+    if (!isInner && url !== "") {
+      window.open(url, "_blank");
+      return;
     }
 
     setState({
