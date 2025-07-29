@@ -4,11 +4,15 @@ import { createRoot } from "react-dom/client";
 import Desktop from "~/pages/Desktop";
 import Login from "~/pages/Login";
 import Boot from "~/pages/Boot";
+import ErrorBoundary from "~/components/ErrorBoundary";
 
 import "@unocss/reset/tailwind.css";
 import "uno.css";
 import "katex/dist/katex.min.css";
 import "~/styles/index.css";
+
+// Set dark mode by default
+document.documentElement.classList.add("dark");
 
 export default function App() {
   const [login, setLogin] = useState<boolean>(false);
@@ -68,6 +72,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>
 );

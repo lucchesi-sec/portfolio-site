@@ -7,45 +7,27 @@ const websites: WebsitesData = {
       {
         id: "my-blog",
         title: "Website",
-        img: "https://zxh.me/img/avatar.jpg",
-        link: "https://zxh.me/",
+        img: "img/ui/enzo-avatar.png",
+        link: "https://enzolucchesi.com",
         inner: true
       },
       {
         id: "my-github",
         title: "Github",
         img: "img/sites/github.svg",
-        link: "https://github.com/Renovamen"
+        link: "https://github.com/lucchesi-sec"
       },
       {
         id: "my-linkedin",
         title: "Linkedin",
         img: "img/sites/linkedin.svg",
-        link: "https://www.linkedin.com/in/xiaohan-zou"
-      },
-      {
-        id: "my-google-scholar",
-        title: "Scholar",
-        img: "img/sites/google-scholar.svg",
-        link: "https://scholar.google.com/citations?user=RuW6xgMAAAAJ"
-      },
-      {
-        id: "my-zhihu",
-        title: "知乎",
-        img: "img/sites/zhihu.jpeg",
-        link: "https://www.zhihu.com/people/chao-neng-gui-su"
-      },
-      {
-        id: "my-twitter",
-        title: "Twitter",
-        img: "img/sites/twitter.svg",
-        link: "https://www.twitter.com/renovamen_zxh"
+        link: "https://www.linkedin.com/in/enzolucchesi"
       },
       {
         id: "my-email",
         title: "Email",
         img: "img/sites/gmail.svg",
-        link: "mailto:renovamenzxh@gmail.com"
+        link: "mailto:enzo@droxa.net"
       }
     ]
   },
@@ -65,46 +47,46 @@ const websites: WebsitesData = {
         link: "https://arxiv.org/"
       },
       {
-        id: "twitter",
-        title: "Twitter",
-        img: "img/sites/twitter.svg",
-        link: "https://www.twitter.com/"
+        id: "hugging-face",
+        title: "Hugging Face",
+        img: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+        link: "https://huggingface.co/"
       },
       {
-        id: "dribbble",
-        title: "Dribbble",
-        img: "img/sites/dribbble.svg",
-        link: "https://dribbble.com/"
+        id: "openai",
+        title: "OpenAI",
+        img: "https://openai.com/favicon.ico",
+        link: "https://openai.com/"
       },
       {
-        id: "pinterest",
-        title: "Pinterest",
-        img: "img/sites/pinterest.svg",
-        link: "https://www.pinterest.com/"
+        id: "anthropic",
+        title: "Anthropic",
+        img: "https://www.anthropic.com/favicon.ico",
+        link: "https://www.anthropic.com/"
       },
       {
-        id: "art-station",
-        title: "ArtStation",
-        img: "img/sites/artstation.svg",
-        link: "https://www.artstation.com//"
+        id: "langchain",
+        title: "LangChain",
+        img: "https://python.langchain.com/img/favicon.ico",
+        link: "https://python.langchain.com/"
       },
       {
-        id: "bilibili",
-        title: "Bilibili",
-        img: "img/sites/bilibili.svg",
-        link: "https://www.bilibili.com/"
+        id: "aws",
+        title: "AWS Console",
+        img: "https://aws.amazon.com/favicon.ico",
+        link: "https://aws.amazon.com/"
       },
       {
-        id: "zhihu",
-        title: "知乎",
-        img: "img/sites/zhihu.jpeg",
-        link: "https://www.zhihu.com/"
+        id: "azure",
+        title: "Azure Portal",
+        img: "https://azure.microsoft.com/favicon.ico",
+        link: "https://portal.azure.com/"
       },
       {
-        id: "leetcode",
-        title: "LeetCode",
-        img: "img/sites/leetcode.svg",
-        link: "https://leetcode.com/"
+        id: "stackoverflow",
+        title: "Stack Overflow",
+        img: "https://stackoverflow.com/favicon.ico",
+        link: "https://stackoverflow.com/"
       },
       {
         id: "reddit",
@@ -119,12 +101,6 @@ const websites: WebsitesData = {
         link: "https://news.ycombinator.com/"
       },
       {
-        id: "v2ex",
-        title: "V2EX",
-        img: "https://www.v2ex.com/apple-touch-icon.png",
-        link: "https://www.v2ex.com/"
-      },
-      {
         id: "aideadline",
         title: "AI Deadlines",
         img: "https://aideadlin.es/static/img/favicon.png",
@@ -132,33 +108,28 @@ const websites: WebsitesData = {
         inner: true
       },
       {
-        id: "oh-my-cv",
-        title: "OhMyCV",
-        img: "https://ohmycv.app/apple-touch-icon.png",
-        link: "https://ohmycv.app/"
+        id: "cybersecurity-news",
+        title: "Krebs on Security",
+        img: "https://krebsonsecurity.com/favicon.ico",
+        link: "https://krebsonsecurity.com/"
       },
       {
-        id: "steam",
-        title: "Steam",
-        img: "img/sites/steam.svg",
-        link: "https://store.steampowered.com/"
+        id: "nist",
+        title: "NIST",
+        img: "https://www.nist.gov/favicon.ico",
+        link: "https://www.nist.gov/"
       },
       {
-        id: "nazo",
-        title: "Nazo",
-        link: "https://nazo.one-story.cn"
+        id: "ansible-docs",
+        title: "Ansible Docs",
+        img: "https://docs.ansible.com/favicon.ico",
+        link: "https://docs.ansible.com/"
       },
       {
-        id: "svgomg",
-        title: "SVGOMG",
-        img: "https://jakearchibald.github.io/svgomg/imgs/icon.png",
-        link: "https://jakearchibald.github.io/svgomg/"
-      },
-      {
-        id: "tiny-png",
-        title: "Tiny PNG",
-        img: "https://tinypng.com/images/panda-chewing-2x.png",
-        link: "https://tinypng.com/"
+        id: "python-docs",
+        title: "Python Docs",
+        img: "https://docs.python.org/favicon.ico",
+        link: "https://docs.python.org/"
       }
     ]
   }

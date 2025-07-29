@@ -13,8 +13,10 @@ const terminal: TerminalData[] = [
         content: (
           <div className="py-1">
             <div>
-              Hi, this is Xiaohan Zou. I am a PhD student at the Computer Science and
-              Engineering department of Pennsylvania State University.
+              Hi, I'm Enzo Lucchesi. I'm an IT Systems & Procurement Manager with 5+ years
+              of experience in systems administration, network infrastructure, and
+              automation. Currently pursuing my B.S. in Information Technology while
+              working on cybersecurity and automation projects.
             </div>
           </div>
         )
@@ -23,14 +25,15 @@ const terminal: TerminalData[] = [
         id: "about-interests",
         title: "interests.txt",
         type: "file",
-        content: "Machine Learning / Computer Vision / Multimodal Learning"
+        content:
+          "Automation / GenAI / Machine Learning / LLM Integration / Infrastructure as Code"
       },
       {
         id: "about-who-cares",
         title: "who-cares.txt",
         type: "file",
         content:
-          "I'm looking for a research internship for Summer 2024. I'm open to collaboration on research projects."
+          "I'm actively transitioning into AI/ML engineering and automation. Open to collaboration on innovative AI projects and automation solutions."
       },
       {
         id: "about-contact",
@@ -42,65 +45,44 @@ const terminal: TerminalData[] = [
               Email:{" "}
               <a
                 className="text-blue-300"
-                href="mailto:renovamenzxh@gmail.com"
+                href="mailto:enzo@droxa.net"
                 target="_blank"
                 rel="noreferrer"
               >
-                renovamenzxh@gmail.com
+                enzo@droxa.net
               </a>
             </li>
             <li>
               Github:{" "}
               <a
                 className="text-blue-300"
-                href="https://github.com/Renovamen"
+                href="https://github.com/lucchesi-sec"
                 target="_blank"
                 rel="noreferrer"
               >
-                @Renovamen
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-blue-300"
-                href="https://scholar.google.com/citations?user=RuW6xgMAAAAJ"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Google Scholar
+                @lucchesi-sec
               </a>
             </li>
             <li>
               Linkedin:{" "}
               <a
                 className="text-blue-300"
-                href="https://www.linkedin.com/in/xiaohan-zou"
+                href="https://www.linkedin.com/in/enzolucchesi"
                 target="_blank"
                 rel="noreferrer"
               >
-                xiaohan-zou
+                enzolucchesi
               </a>
             </li>
             <li>
               Personal Website:{" "}
               <a
                 className="text-blue-300"
-                href="https://zxh.me"
+                href="https://enzolucchesi.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://zxh.me
-              </a>
-            </li>
-            <li>
-              知乎:{" "}
-              <a
-                className="text-blue-300"
-                href="https://www.zhihu.com/people/chao-neng-gui-su"
-                target="_blank"
-                rel="noreferrer"
-              >
-                @西伯利亚大恶龙
+                https://enzolucchesi.com
               </a>
             </li>
           </ul>

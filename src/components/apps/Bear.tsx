@@ -7,6 +7,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula, prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import bear from "~/configs/bear";
 import type { BearMdData } from "~/types";
+import ScrollToTop from "~/components/ScrollToTop";
 
 interface ContentProps {
   contentID: string;
@@ -88,7 +89,7 @@ const Middlebar = ({ items, cur, setContent }: MiddlebarProps) => {
       {items.map((item: BearMdData, index: number) => (
         <li
           key={`bear-midbar-${item.id}`}
-          className={`h-24 flex flex-col cursor-default border-l-2 ${
+          className={`min-h-24 h-auto flex flex-col cursor-default border-l-2 ${
             cur === index
               ? "border-red-500 bg-white dark:bg-gray-900"
               : "border-transparent bg-transparent"
@@ -113,7 +114,7 @@ const Middlebar = ({ items, cur, setContent }: MiddlebarProps) => {
               )}
             </span>
           </div>
-          <div className="flex-1 ml-10" p="b-2 r-1" text="sm c-500" border="b c-300">
+          <div className="flex-1 ml-10 mb-2" p="b-2 r-1" text="sm c-500" border="b c-300">
             {item.excerpt}
           </div>
         </li>
@@ -172,7 +173,7 @@ const Content = ({ contentID, contentURL }: ContentProps) => {
   }, [contentID, contentURL, fetchMarkdown]);
 
   return (
-    <div className="markdown w-2/3 mx-auto px-2 py-6 text-c-700">
+    <div className="markdown w-2/3 mx-auto px-2 py-6 text-c-700 relative">
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[
@@ -183,6 +184,7 @@ const Content = ({ contentID, contentURL }: ContentProps) => {
       >
         {storeMd[contentID]}
       </ReactMarkdown>
+      <ScrollToTop />
     </div>
   );
 };

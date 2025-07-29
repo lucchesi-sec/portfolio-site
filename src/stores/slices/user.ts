@@ -11,7 +11,37 @@ export interface UserSlice {
 }
 
 export const createUserSlice: StateCreator<UserSlice> = (set) => ({
-  typoraMd: `# Hi 👋\nThis is a simple clone of [Typora](https://typora.io/). Built on top of [Milkdown](https://milkdown.dev/), an open-source WYSIWYG markdown editor.`,
+  typoraMd: `# AI/ML Engineering Notes
+
+## Current Projects
+
+### MCP Server Development
+Building Model Context Protocol servers for AI tool integration:
+- AWS InfraSec MCP Server - Security analysis capabilities
+- Custom tools for LLM workflows
+- Integration with Claude and OpenAI APIs
+
+### Automation Pipeline Enhancement
+Upgrading existing automation with AI capabilities:
+- LangChain integration for intelligent decision making
+- RAG pipelines for document processing
+- Multi-agent systems using Microsoft AutoGen
+- DSPy for optimizing language model pipelines
+
+## Learning Goals
+- [ ] Advanced prompt engineering techniques
+- [ ] Vector database optimization
+- [ ] Multi-modal AI applications
+- [ ] Edge AI deployment strategies
+
+## Technical Stack Evolution
+**Traditional Automation** → **AI-Enhanced Automation**
+- PowerShell → Python + LangChain
+- Static scripts → Adaptive AI workflows
+- Rule-based → Context-aware decision making
+
+---
+*This workspace is for documenting my AI/ML engineering journey and project notes.*`,
   setTyporaMd: (v) => set(() => ({ typoraMd: v })),
   faceTimeImages: {},
   addFaceTimeImage: (v) =>

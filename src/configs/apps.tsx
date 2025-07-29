@@ -1,5 +1,14 @@
+import { lazy } from "react";
 import { appBarHeight } from "~/utils";
 import type { AppsData } from "~/types";
+
+// Lazy load apps
+const Bear = lazy(() => import("~/components/apps/Bear"));
+const Typora = lazy(() => import("~/components/apps/Typora"));
+const Safari = lazy(() => import("~/components/apps/Safari"));
+const VSCode = lazy(() => import("~/components/apps/VSCode"));
+const FaceTime = lazy(() => import("~/components/apps/FaceTime"));
+const Terminal = lazy(() => import("~/components/apps/Terminal"));
 
 const apps: AppsData[] = [
   {
@@ -77,7 +86,7 @@ const apps: AppsData[] = [
     title: "Github",
     desktop: false,
     img: "img/icons/github.png",
-    link: "https://github.com/Renovamen/playground-macos"
+    link: "https://github.com/lucchesi-sec"
   }
 ];
 

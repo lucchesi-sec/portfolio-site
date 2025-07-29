@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { apps, wallpapers } from "~/configs";
 import { minMarginY } from "~/utils";
 import type { MacActions } from "~/types";
@@ -226,7 +226,20 @@ export default function Desktop(props: MacActions) {
 
         return (
           <AppWindow key={`desktop-app-${app.id}`} {...props}>
-            {app.content}
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center size-full">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
+                    <p className="text-gray-600 dark:text-gray-400">
+                      Loading {app.title}...
+                    </p>
+                  </div>
+                </div>
+              }
+            >
+              {app.content}
+            </Suspense>
           </AppWindow>
         );
       } else {

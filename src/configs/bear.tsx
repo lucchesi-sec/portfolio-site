@@ -3,29 +3,22 @@ import type { BearData } from "~/types";
 const bear: BearData[] = [
   {
     id: "profile",
-    title: "Profile",
-    icon: "i-fa-solid:paw",
+    title: "About Enzo",
+    icon: "i-fa-solid:user",
     md: [
       {
         id: "about-me",
-        title: "About Me",
+        title: "Career Pivot to AI/ML",
         file: "markdown/about-me.md",
-        icon: "i-la:dragon",
-        excerpt: "Hey there! I'm a dragon lost in human world..."
+        icon: "i-fa-solid:rocket",
+        excerpt: "Leveraging 5+ years of IT expertise to build innovative AI solutions"
       },
       {
-        id: "github-stats",
-        title: "Github Stats",
-        file: "markdown/github-stats.md",
-        icon: "i-icon-park-outline:github",
-        excerpt: "Here are some status about my github account..."
-      },
-      {
-        id: "about-site",
-        title: "About This Site",
-        file: "markdown/about-site.md",
-        icon: "i-octicon:browser",
-        excerpt: "Something about this personal portfolio site..."
+        id: "automation-journey",
+        title: "My Automation Journey",
+        file: "markdown/automation-journey.md",
+        icon: "i-fa-solid:robot",
+        excerpt: "From manual processes to AI-powered workflows that transform operations"
       }
     ]
   },
@@ -35,124 +28,93 @@ const bear: BearData[] = [
     icon: "i-octicon:repo",
     md: [
       {
-        id: "flint",
-        title: "Flint",
-        file: "https://raw.githubusercontent.com/Renovamen/flint/main/README.md",
-        icon: "i-heroicons-solid:fire",
-        excerpt: "A deep learning framework implemented in Numpy...",
-        link: "https://github.com/Renovamen/flint"
+        id: "ansible-network-automation",
+        title: "Ansible Network Platform",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/ansible-network-automation-platform/main/README.md",
+        icon: "i-simple-icons:ansible",
+        excerpt:
+          "Network automation platform with 23+ infrastructure roles and AI integration",
+        link: "https://github.com/lucchesi-sec/ansible-network-automation-platform"
       },
       {
-        id: "portfolio-macos",
-        title: "Portfolio macOS",
-        file: "https://raw.githubusercontent.com/Renovamen/playground-macos/main/README.md",
-        icon: "i-ri:gamepad-line",
-        excerpt: "My portfolio website simulating macOS's GUI...",
-        link: "https://github.com/Renovamen/playground-macos"
+        id: "aws-security-audit",
+        title: "AWS Security Audit Suite",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/aws-security-audit-suite/main/README.md",
+        icon: "i-fa-brands:aws",
+        excerpt: "Comprehensive AWS security scanning and compliance automation",
+        link: "https://github.com/lucchesi-sec/aws-security-audit-suite"
       },
       {
-        id: "oh-my-cv",
-        title: "Oh, My CV!",
-        file: "https://raw.githubusercontent.com/Renovamen/oh-my-cv/main/README.md",
-        icon: "i-ri:newspaper-fill",
-        excerpt: "Write your curriculum vitae / resume in Markdown online...",
-        link: "https://ohmycv.app"
+        id: "aws-infrasec-mcp",
+        title: "AWS InfraSec MCP Server",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/aws-infrasec-mcp-server/main/README.md",
+        icon: "i-material-symbols:security",
+        excerpt: "MCP server demonstrating AWS security analysis capabilities",
+        link: "https://github.com/lucchesi-sec/aws-infrasec-mcp-server"
       },
       {
-        id: "oh-vue-icons",
-        title: "Oh, Vue Icons!",
-        file: "https://raw.githubusercontent.com/Renovamen/oh-vue-icons/master/README.md",
-        icon: "i-fa-brands:vuejs",
-        excerpt: "Importing icons from different icon packs in Vue easily...",
-        link: "https://oh-vue-icons.js.org"
+        id: "ai-automation-projects",
+        title: "AI Automation Portfolio",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/ai-assisted-automation-projects/main/README.md",
+        icon: "i-fa-solid:robot",
+        excerpt: "Automation portfolio projects with AI collaboration features",
+        link: "https://github.com/lucchesi-sec/ai-assisted-automation-projects"
       },
       {
-        id: "gungnir",
-        title: "Gungnir",
-        file: "https://raw.githubusercontent.com/Renovamen/vuepress-theme-gungnir/main/README.md",
-        icon: "i-akar-icons:sword",
-        excerpt: "A simple and beautiful blog theme for VuePress...",
-        link: "https://vuepress-theme-gungnir.vercel.app"
+        id: "incident-response",
+        title: "Incident Response Platform",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/incident-response-orchestrator/main/README.md",
+        icon: "i-material-symbols:emergency",
+        excerpt: "Incident response orchestration with NIST/SANS compliance",
+        link: "https://github.com/lucchesi-sec/incident-response-orchestrator"
       },
       {
-        id: "metallic",
-        title: "Metallic",
-        file: "https://raw.githubusercontent.com/Renovamen/metallic/master/README.md",
-        icon: "i-icon-park-outline:heavy-metal",
-        excerpt: "A meta-learning library base on PyTorch...",
-        link: "https://github.com/Renovamen/metallic"
+        id: "network-vulnerability-scanner",
+        title: "Network Vulnerability Scanner",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/network-vulnerability-scanner/main/README.md",
+        icon: "i-material-symbols:radar",
+        excerpt: "Comprehensive network vulnerability assessment with ethical guidelines",
+        link: "https://github.com/lucchesi-sec/network-vulnerability-scanner"
       },
       {
-        id: "text-classification",
-        title: "Text Classification",
-        file: "https://raw.githubusercontent.com/Renovamen/Text-Classification/master/README.md",
-        icon: "i-gg:format-text",
-        excerpt: "PyTorch implementation of text classificaiton models...",
-        link: "https://github.com/Renovamen/Text-Classification"
+        id: "ssh-key-manager",
+        title: "SSH Key Lifecycle Manager",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/ssh-key-lifecycle-manager/main/README.md",
+        icon: "i-fa-solid:key",
+        excerpt: "Automated SSH key lifecycle management with advanced safety features",
+        link: "https://github.com/lucchesi-sec/ssh-key-lifecycle-manager"
       },
       {
-        id: "speech-emotion-recognition",
-        title: "Speech Emotion",
-        file: "https://raw.githubusercontent.com/Renovamen/Speech-Emotion-Recognition/master/README.md",
-        icon: "i-ant-design:audio-filled",
-        excerpt: "Speech emotion recognition using Keras and sklearn...",
-        link: "https://github.com/Renovamen/Speech-Emotion-Recognition"
+        id: "linux-server-hardening",
+        title: "Linux Server Hardening",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/linux-server-hardening/main/README.md",
+        icon: "i-fa-brands:linux",
+        excerpt: "Comprehensive modular framework for automated Linux server hardening",
+        link: "https://github.com/lucchesi-sec/linux-server-hardening"
       },
       {
-        id: "pcalg-py",
-        title: "PC Algorithm",
-        file: "https://raw.githubusercontent.com/Renovamen/pcalg-py/master/README.md",
-        icon: "i-tabler:atom-2",
-        excerpt: "Implement PC algorithm in Python...",
-        link: "https://github.com/Renovamen/pcalg-py"
+        id: "malware-analysis",
+        title: "Malware Analysis Toolkit",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/malware-analysis-toolkit/main/README.md",
+        icon: "i-material-symbols:bug-report",
+        excerpt: "Educational static malware analysis with YARA integration",
+        link: "https://github.com/lucchesi-sec/malware-analysis-toolkit"
       },
       {
-        id: "midgard",
-        title: "Midgard",
-        file: "https://raw.githubusercontent.com/Renovamen/midgard/master/README.md",
-        icon: "i-bx:game",
-        excerpt: "An interactive version of my resume, powered by Vue...",
-        link: "https://resume.zxh.io/"
+        id: "password-validator",
+        title: "Password Strength Validator",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/password-strength-validator/main/README.md",
+        icon: "i-material-symbols:password",
+        excerpt: "Advanced password analysis with NIST SP 800-63B compliance",
+        link: "https://github.com/lucchesi-sec/password-strength-validator"
       },
       {
-        id: "image-captioning",
-        title: "Image Captioning",
-        file: "https://raw.githubusercontent.com/Renovamen/Image-Captioning/master/README.md",
-        icon: "i-bi:image-fill",
-        excerpt: "PyTorch implementation of image captioning models...",
-        link: "https://github.com/Renovamen/Image-Captioning"
-      },
-      {
-        id: "wordle-helper",
-        title: "Wordle Helper",
-        file: "https://raw.githubusercontent.com/Renovamen/wordle-helper/main/README.md",
-        icon: "i-bi:grid-1x2",
-        excerpt: "Help you solve Wordle puzzles...",
-        link: "https://wordle.zxh.io"
-      },
-      {
-        id: "cube-solver",
-        title: "Cube Solver",
-        file: "https://raw.githubusercontent.com/Renovamen/Just-a-Cube/master/README.md",
-        icon: "i-bx:cube",
-        excerpt: "A rubik's cube solver (layer-by-layer & two-phase)...",
-        link: "https://cube.zxh.io"
-      },
-      {
-        id: "alkaid",
-        title: "Alkaid",
-        file: "https://raw.githubusercontent.com/Renovamen/alkaid/main/README.md",
-        icon: "i-simple-icons:stellar",
-        excerpt: "Minimal reinforcement-learning toolbox for PyTorch...",
-        link: "https://github.com/Renovamen/alkaid"
-      },
-      {
-        id: "fishmail",
-        title: "Fishmail",
-        file: "https://raw.githubusercontent.com/Renovamen/Fishmail/master/README.md",
-        icon: "i-game-icons:fish-escape",
-        excerpt: "上班的时候装作在 Gmail 上查邮件的样子看知乎摸鱼...",
-        link: "https://fishmail.vercel.app"
+        id: "powershell-automation",
+        title: "PowerShell Automation",
+        file: "https://raw.githubusercontent.com/lucchesi-sec/powershell-automation/main/README.md",
+        icon: "i-simple-icons:powershell",
+        excerpt: "PowerShell automation scripts for Windows administration",
+        link: "https://github.com/lucchesi-sec/powershell-automation"
       }
     ]
   }
