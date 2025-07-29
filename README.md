@@ -4,6 +4,8 @@ My portfolio website simulating macOS's GUI: [enzolucchesi.com](https://enzolucc
 
 Powered by [React](https://reactjs.org/) + [Zustand](https://zustand-demo.pmnd.rs/) + [UnoCSS](https://uno.antfu.me/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/).
 
+Built with ❤️ for the tech community.
+
 ![light mode](./public/screenshots/light.png)
 ![dark mode](./public/screenshots/dark.png)
 
